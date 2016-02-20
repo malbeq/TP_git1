@@ -1,0 +1,153 @@
+/**********************************
+***Template CSS : Evil Musketeer***
+**********Auteur : Malbeq**********
+***********************************/
+
+
+/************************************
+déclaration font-face, ajout de fonts
+*************************************/
+
+@font-face {
+    font-family: 'airstreamregular';
+    src: url('fonts/Airstream-webfont.eot');
+    src: url('fonts/Airstream-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Airstream-webfont.woff') format('woff'),
+         url('fonts/Airstream-webfont.ttf') format('truetype'),
+         url('fonts/Airstream-webfont.svg#airstreamregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/****************************
+balises globales du document
+*****************************/
+
+*
+{
+	font-family: "trebuchet MS", verdana, arial, sans-serif;
+	color: white;
+}
+
+html
+{
+	height: 100%;
+}
+
+body 
+{
+    background-color: black;
+    height: 98%;
+}
+
+/******************
+parties du document
+*******************/
+
+header
+{
+	width: 80%;
+	margin: auto;
+	min-width: 600px;
+	height: 130px;
+	background-color: #2d2d37;
+	border-top: 8px solid #09C2BF;
+	border-left: 8px solid #09C2BF;
+	border-right: 8px solid #09C2BF;
+	border-radius: 20px 20px 0 0;
+	align: center;
+}
+
+nav
+{
+	background-color: silver;
+	border-radius: 15px;
+	box-shadow: 0 0 10px black;
+	width: 10%;
+	opacity: 0.9;
+}
+
+section
+{
+		background-color: silver;
+}
+
+article
+{
+	border: 1px navy dashed;
+	width: 30%;
+	padding: 5px;
+	background-color: rgba(255, 255, 255, 0.4);
+	min-height: 65%;
+}
+
+aside
+{
+	float: right;
+	border: 1px black solid;
+	box-shadow: -2px 2px 6px black;
+}
+
+footer
+{
+	width: 85%;
+	height: 98%;
+}
+
+/**************************************
+titres, paragraphes et balises "inline" 
+***************************************/
+h1
+{
+	font-family: "airstreamregular", georgia, serif;
+	color: black;
+	text-shadow: 0 0 8px white;
+	font-size: 6em;
+	text-align: center;
+}
+
+h2
+{
+	font-family: "times new roman", georgia, serif;
+	color: lime;
+	padding: 5px 0 5px 0;
+	text-align: center;
+}
+
+h3
+{
+	font-family: arial, verdana, sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+mark
+{
+	font-family: verdana, arial, sans-serif;
+	font-weight: bold;
+	color: white;
+	background-color: gray;
+}
+
+em
+{
+	color: #666;
+}
+
+/*************************
+affichage basse résolution
+**************************/
+
+@media screen and (max-width: 1024px)
+{
+	nav 
+	{
+		display: none;
+	}
+
+	article
+	{
+		width: 90%;
+		margin: 24px;
+	}
+}
